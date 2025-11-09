@@ -124,3 +124,21 @@ footer {
     padding: 1em 0;
     clear: both;
 }
+
+section.speaker h1 {
+    color: var(--accent-color);
+}
+
+section.speaker h2 {
+    color: black;
+}
+
+section.speaker p {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+section.speaker img {
+    float: right;
+    margin: 0 0 1em 1em;
+}
