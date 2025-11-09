@@ -1,0 +1,126 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, p, ul {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    line-height: 1.5;
+}
+
+ul {
+    margin-left: 2em;
+}
+
+:root {
+    --accent-color: #800000;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(90% + 0.2vw);
+    line-height: 1.5;
+    width: 80%;
+    max-width: 1024px;
+    margin: 0 auto;
+    border: 2px solid var(--accent-color);
+    background-color: #fff;
+}
+
+header {
+    border-bottom: 2px solid var(--accent-color);
+    background: linear-gradient(30deg, #f6bb73 0%, #fff 30%, #fff 65%, #f6bb73 100%);
+    padding: 1em;
+    line-height: 1.2;
+}
+
+header img {
+    float: left;
+    margin: 0.75em 1em;
+    min-width: 40px;
+    max-width: 80px;
+    width: 100%;
+    height: auto;
+}
+
+header h2, header h3 {
+    text-indent: 0;
+}
+
+header h2 { padding-bottom: 0; }
+header h3 { padding-bottom: 1em; }
+
+main {
+    display: flex;
+    padding: 1em;
+    clear: left;
+    gap: 2em;
+}
+
+aside {
+    flex-basis: 25%;
+    order: 1;
+}
+
+section {
+    flex-basis: 75%;
+    order: 2;
+}
+
+.featured {
+    border-top: 2px solid var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding: 1em 0;
+    margin: 1em 0;
+}
+
+section img {
+    float: right;
+    margin: 0 0 1em 1em;
+    min-width: 100px;
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+}
+
+aside img {
+    min-width: 40px;
+    max-width: 75px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.5em 0;
+}
+
+main img {
+    border: 4px double var(--accent-color);
+    border-radius: 8px;
+}
+
+h1 { font-size: 150%; }
+h2 {
+    font-size: 130%;
+    color: var(--accent-color);
+}
+h3 { font-size: 105%; }
+
+blockquote {
+    font-style: italic;
+    padding: 0 2em;
+    margin: 1em 0;
+}
+
+a:focus, a:hover {
+    font-style: italic;
+    color: var(--accent-color);
+}
+
+footer {
+    background-color: var(--accent-color);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    clear: both;
+}
